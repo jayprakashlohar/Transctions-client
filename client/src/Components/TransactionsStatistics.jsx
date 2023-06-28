@@ -13,7 +13,7 @@ const TransactionsStatistics = () => {
       try {
         console.log("selectedMonth", selectedMonth);
         const response = await fetch(
-          `http://localhost:8000/api/statistics?month=${selectedMonth}`
+          `https://easy-pear-walkingstick-wrap.cyclic.app/api/statistics?month=${selectedMonth}`
         );
 
         const data = await response.json();

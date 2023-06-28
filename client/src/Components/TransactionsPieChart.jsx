@@ -8,7 +8,7 @@ const TransactionsPieChart = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/pie-chart?month=${month}`
+        `https://easy-pear-walkingstick-wrap.cyclic.app/pie-chart?month=${month}`
       );
       const data = await response.json();
       setPriceRanges(data.priceRanges);

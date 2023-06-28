@@ -27,7 +27,7 @@ const TransactionsTable = () => {
   const loadTransactions = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/transactions?month=${selectedMonth}&page=${currentPage}&search=${searchText}`
+        `https://easy-pear-walkingstick-wrap.cyclic.app/api/transactions?month=${selectedMonth}&page=${currentPage}&search=${searchText}`
       );
       const data = await response.json();
       // console.log("data", data);
